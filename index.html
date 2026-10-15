@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#142431">
+<title>Tower Rush — 3D Obstacle Climb</title><link rel="icon" href="icon.svg"><link rel="stylesheet" href="style.css">
+</head><body>
+<div id="world" aria-label="3D obstacle course"></div><div class="vignette"></div>
+<header><a class="brand" href="./"><b>↟</b><span>TOWER<span class="light">RUSH</span><small>THE ONLY WAY IS UP.</small></span></a><div class="clock"><small>TIME LEFT</small><strong id="timer">08:00</strong><i><span id="clock-line"></span></i></div><div class="actions"><span class="solo">● &nbsp; SOLO CLIMB</span><button id="sound" aria-label="Toggle sound" title="Toggle sound">♫</button><button id="pause" aria-label="Pause game" title="Pause (Esc)">II</button></div></header>
+<aside><div class="eyebrow">YOUR CLIMB <span id="height">0m</span></div><div id="track"></div><div class="track-footer"><span id="progress">0%</span><span>TO THE TOP</span></div></aside>
+<div id="toast" role="status" aria-live="polite"></div>
+<footer><div class="stage"><span id="stage-number">01</span><div><small id="mode-label">CLASSIC · NO CHECKPOINTS</small><strong id="stage-name">FIRST STEPS</strong></div></div><div class="hints"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> Move</span><span><kbd>SPACE</kbd> Jump</span><span>Drag to look · Scroll to zoom</span><span><kbd>R</kbd> Restart</span></div><div class="best"><small>PERSONAL BEST</small><strong id="best">—</strong></div></footer>
+<div id="touch"><div id="stick" aria-label="Movement joystick"><div id="knob"></div></div><button id="jump" aria-label="Jump">↑<small>JUMP</small></button></div>
+<section id="menu"><div class="card"><div class="pill">● &nbsp; A NEW HEIGHT. A NEW CHALLENGE.</div><p id="overline">WELCOME TO</p><h1 id="title">TOWER<br><em>RUSH</em><span class="arrow"></span></h1><p id="copy">Six stages. One shot at the top.<br>Jump, balance, and beat the clock.</p><div id="modes"><button class="selected" data-mode="classic">Classic<small>No checkpoints</small></button><button data-mode="practice">Practice<small>Stage checkpoints</small></button></div><button id="play">LET’S CLIMB <span class="arrow"></span></button><button id="change-mode" class="hidden">Choose a different mode</button><p class="tip">WASD to move · Space to jump · Drag to look</p><p class="credit">48 OBSTACLES · SIX STAGES · ONE SUMMIT</p></div><div class="side">01 — 06 &nbsp; ─── &nbsp; DON’T LOOK DOWN.</div></section>
+<div id="flash"></div><div id="loading"><i></i><span>BUILDING YOUR TOWER</span></div>
+<script type="module" src="game.js"></script></body></html>
